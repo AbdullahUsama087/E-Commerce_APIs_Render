@@ -1,0 +1,1164 @@
+{
+    "info": {
+        "_postman_id": "e903c685-297d-49a0-b449-39eb10f2ea5d",
+        "name": "E-Commerce Project",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "Category APIs",
+            "item": [
+                {
+                    "name": "Create Category",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "{{url}}/category/",
+                            "path": [
+                                "category"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "name",
+                                    "value": "Test",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "image",
+                                    "src": "c:\\Users\\abdoo\\Desktop\\Route\\pics\\images (4).jpeg",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiZG9vc2FtQGdtYWlsLmNvbSIsIl9pZCI6IjY1MDA4YzVlMTc2NjE2ZTk3NmQ5NTFhZCIsInJvbGUiOiJVc2VyIiwiaWF0IjoxNjk0NzI1MjA4LCJleHAiOjE2OTQ3Mjg4MDh9.OwL8A8CRKSf25zgjmajL2q-AgsoOx6L0K5Kh9zbUpNk",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Update Category",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "{{url}}/category/?categoryId=6503773140c21e65596579c6",
+                            "query": [
+                                {
+                                    "key": "categoryId",
+                                    "value": "6503773140c21e65596579c6"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "category"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "name",
+                                    "value": "testOOOO",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "image",
+                                    "src": "c:\\Users\\abdoo\\Desktop\\Route\\pics\\images (3).jpeg",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiZG9vc2FtQGdtYWlsLmNvbSIsIl9pZCI6IjY1MDA4YzVlMTc2NjE2ZTk3NmQ5NTFhZCIsInJvbGUiOiJVc2VyIiwiaWF0IjoxNjk0NzI1MjA4LCJleHAiOjE2OTQ3Mjg4MDh9.OwL8A8CRKSf25zgjmajL2q-AgsoOx6L0K5Kh9zbUpNk",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Get All Categories",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{url}}/category/",
+                            "path": [
+                                "category"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Delete Category",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "{{url}}/category/?categoryId=6503773140c21e65596579c6",
+                            "query": [
+                                {
+                                    "key": "categoryId",
+                                    "value": "6503773140c21e65596579c6"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "category"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiZG9vc2FtQGdtYWlsLmNvbSIsIl9pZCI6IjY1MDA4YzVlMTc2NjE2ZTk3NmQ5NTFhZCIsInJvbGUiOiJVc2VyIiwiaWF0IjoxNjk0NzI1MjA4LCJleHAiOjE2OTQ3Mjg4MDh9.OwL8A8CRKSf25zgjmajL2q-AgsoOx6L0K5Kh9zbUpNk",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Sub Category APIs",
+            "item": [
+                {
+                    "name": "Create SubCategory",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "{{url}}/category/64fc71b6e4088f130e6e2861",
+                            "path": [
+                                "category",
+                                "64fc71b6e4088f130e6e2861"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "name",
+                                    "value": "lap tops",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "image",
+                                    "src": "c:\\Users\\abdoo\\Desktop\\Route\\pics\\OIP.jpeg",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiZG9vc2FtQGdtYWlsLmNvbSIsIl9pZCI6IjY1MDA4YzVlMTc2NjE2ZTk3NmQ5NTFhZCIsInJvbGUiOiJVc2VyIiwiaWF0IjoxNjk0NzI1MjA4LCJleHAiOjE2OTQ3Mjg4MDh9.OwL8A8CRKSf25zgjmajL2q-AgsoOx6L0K5Kh9zbUpNk",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Get All SubCategories",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{url}}/subCategory/",
+                            "path": [
+                                "subCategory"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Update SubCategory",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "{{url}}/subCategory/?categoryId=64fc71b6e4088f130e6e2861&subCategoryId=65037bf9675f1caf4cbee97e",
+                            "query": [
+                                {
+                                    "key": "categoryId",
+                                    "value": "64fc71b6e4088f130e6e2861"
+                                },
+                                {
+                                    "key": "subCategoryId",
+                                    "value": "65037bf9675f1caf4cbee97e"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "subCategory"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "name",
+                                    "value": "Mac Book",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "image",
+                                    "src": "c:\\Users\\abdoo\\Desktop\\Route\\pics\\61dWiFV2bnL.__AC_SY300_SX300_QL70_ML2_.jpg",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiZG9vc2FtQGdtYWlsLmNvbSIsIl9pZCI6IjY1MDA4YzVlMTc2NjE2ZTk3NmQ5NTFhZCIsInJvbGUiOiJVc2VyIiwiaWF0IjoxNjk0NzI1MjA4LCJleHAiOjE2OTQ3Mjg4MDh9.OwL8A8CRKSf25zgjmajL2q-AgsoOx6L0K5Kh9zbUpNk",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Delete SubCategory",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "{{url}}/subCategory/?categoryId=64fc71b6e4088f130e6e2861&subCategoryId=65037bf9675f1caf4cbee97e",
+                            "query": [
+                                {
+                                    "key": "categoryId",
+                                    "value": "64fc71b6e4088f130e6e2861"
+                                },
+                                {
+                                    "key": "subCategoryId",
+                                    "value": "65037bf9675f1caf4cbee97e"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "subCategory"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiZG9vc2FtQGdtYWlsLmNvbSIsIl9pZCI6IjY1MDA4YzVlMTc2NjE2ZTk3NmQ5NTFhZCIsInJvbGUiOiJVc2VyIiwiaWF0IjoxNjk0NzI1MjA4LCJleHAiOjE2OTQ3Mjg4MDh9.OwL8A8CRKSf25zgjmajL2q-AgsoOx6L0K5Kh9zbUpNk",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Brand APIs",
+            "item": [
+                {
+                    "name": "Create Brand",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "{{url}}/brand/?categoryId=64f5b743d9178b24e835e9e3&subCategoryId=64f5b77bd9178b24e835e9e7",
+                            "query": [
+                                {
+                                    "key": "categoryId",
+                                    "value": "64f5b743d9178b24e835e9e3"
+                                },
+                                {
+                                    "key": "subCategoryId",
+                                    "value": "64f5b77bd9178b24e835e9e7"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "brand"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "name",
+                                    "value": "samsung",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "logo",
+                                    "src": "c:\\Users\\abdoo\\Desktop\\Route\\pics\\samsung-logo-on-transparent-background-free-vector.jpg",
+                                    "type": "file"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Update Brand",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "{{url}}/brand/?categoryId=64f31bc0db90cf684b0615b0&subCategoryId=64f31c18db90cf684b0615be&brandId=64f31cc2db90cf684b0615c6",
+                            "query": [
+                                {
+                                    "key": "categoryId",
+                                    "value": "64f31bc0db90cf684b0615b0"
+                                },
+                                {
+                                    "key": "subCategoryId",
+                                    "value": "64f31c18db90cf684b0615be"
+                                },
+                                {
+                                    "key": "brandId",
+                                    "value": "64f31cc2db90cf684b0615c6"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "brand"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "name",
+                                    "value": "apple iphones",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "logo",
+                                    "src": "c:\\Users\\abdoo\\Desktop\\Route\\pics\\iPhone-14-Pro-Back-Purple-Hand.jpg",
+                                    "type": "file"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Get All Brands",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{url}}/brand/",
+                            "path": [
+                                "brand"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Delete Brand",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "{{url}}/brand/?categoryId=64f4a59d16b77680798b4550&subCategoryId=64f4a602daf9eb6317c82e5c&brandId=64f4a630daf9eb6317c82e66",
+                            "query": [
+                                {
+                                    "key": "categoryId",
+                                    "value": "64f4a59d16b77680798b4550"
+                                },
+                                {
+                                    "key": "subCategoryId",
+                                    "value": "64f4a602daf9eb6317c82e5c"
+                                },
+                                {
+                                    "key": "brandId",
+                                    "value": "64f4a630daf9eb6317c82e66"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "brand"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Product APIs",
+            "item": [
+                {
+                    "name": "Create Product",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "{{url}}/product/?categoryId=64f5b743d9178b24e835e9e3&subCategoryId=64f5b77bd9178b24e835e9e7&brandId=64f6289fe9ed5f551b420a2f",
+                            "query": [
+                                {
+                                    "key": "categoryId",
+                                    "value": "64f5b743d9178b24e835e9e3"
+                                },
+                                {
+                                    "key": "subCategoryId",
+                                    "value": "64f5b77bd9178b24e835e9e7"
+                                },
+                                {
+                                    "key": "brandId",
+                                    "value": "64f6289fe9ed5f551b420a2f"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "product"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "title",
+                                    "value": "Galaxy S22 Ultra",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "description",
+                                    "value": "Samsung Camera description: Front Cellular technology: 5G Display type: Amoled Form factor: Slate Model name: Samsung Galaxy S22 ultra Operating system: Android 12.0",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "price",
+                                    "value": "27000",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "appliedDiscount",
+                                    "value": "20",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "colors",
+                                    "value": "Blue",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "colors",
+                                    "value": "Midnight",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "colors",
+                                    "value": "Starlight",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "sizes",
+                                    "value": "128 GB",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "sizes",
+                                    "value": "256GB",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "sizes",
+                                    "value": "512 GB",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "stock",
+                                    "value": "10",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "image",
+                                    "src": "c:\\Users\\abdoo\\Desktop\\Route\\pics\\61L68P3+fxL._AC_SX569_.jpg",
+                                    "type": "file"
+                                },
+                                {
+                                    "key": "image",
+                                    "src": "c:\\Users\\abdoo\\Desktop\\Route\\pics\\61ZZtk8bmIL._AC_SX569_.jpg",
+                                    "type": "file"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Update Product",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "{{url}}/product/?categoryId=64f4a59d16b77680798b4550&subCategoryId=64f4a602daf9eb6317c82e5c&brandId=64f4a630daf9eb6317c82e66&productId=64f4a673daf9eb6317c82e71",
+                            "query": [
+                                {
+                                    "key": "categoryId",
+                                    "value": "64f4a59d16b77680798b4550"
+                                },
+                                {
+                                    "key": "subCategoryId",
+                                    "value": "64f4a602daf9eb6317c82e5c"
+                                },
+                                {
+                                    "key": "brandId",
+                                    "value": "64f4a630daf9eb6317c82e66"
+                                },
+                                {
+                                    "key": "productId",
+                                    "value": "64f4a673daf9eb6317c82e71"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "product"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "title",
+                                    "value": "IPhone 13",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "description",
+                                    "value": "15 cm (6.2-inch) Super Retina XDR display",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "price",
+                                    "value": "17500",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "appliedDiscount",
+                                    "value": "35",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "colors",
+                                    "value": "Purple",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "colors",
+                                    "value": "Blue",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "colors",
+                                    "value": "Midnight",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "colors",
+                                    "value": "Starlight",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "sizes",
+                                    "value": "128 GB",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "sizes",
+                                    "value": "256GB",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "sizes",
+                                    "value": "512 GB",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "stock",
+                                    "value": "15",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "image",
+                                    "src": "c:\\Users\\abdoo\\Desktop\\Route\\pics\\280da9d0-33d8-11ed-beeb-9f0777e02779.cf.jpg",
+                                    "type": "file"
+                                },
+                                {
+                                    "key": "image",
+                                    "src": "c:\\Users\\abdoo\\Desktop\\Route\\pics\\download.jpeg",
+                                    "type": "file"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Get All Products",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{url}}/product",
+                            "path": [
+                                "product"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Delete Product",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "{{url}}/product?categoryId=64f5b743d9178b24e835e9e3&subCategoryId=64f5b77bd9178b24e835e9e7&brandId=64f5b7c1d9178b24e835e9ef&productId=64f5bf6491b694a70a32179b",
+                            "query": [
+                                {
+                                    "key": "categoryId",
+                                    "value": "64f5b743d9178b24e835e9e3"
+                                },
+                                {
+                                    "key": "subCategoryId",
+                                    "value": "64f5b77bd9178b24e835e9e7"
+                                },
+                                {
+                                    "key": "brandId",
+                                    "value": "64f5b7c1d9178b24e835e9ef"
+                                },
+                                {
+                                    "key": "productId",
+                                    "value": "64f5bf6491b694a70a32179b"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "product"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Get Products By Title",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{url}}/product/title?page=2&size=2",
+                            "query": [
+                                {
+                                    "key": "page",
+                                    "value": "2"
+                                },
+                                {
+                                    "key": "size",
+                                    "value": "2"
+                                },
+                                {
+                                    "key": "search",
+                                    "value": "13",
+                                    "disabled": true
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "product",
+                                "title"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "List Products",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{url}}/product/list?price[gte]=250000",
+                            "query": [
+                                {
+                                    "key": "select",
+                                    "value": "price,stock,colors,-_id",
+                                    "disabled": true
+                                },
+                                {
+                                    "key": "price[gte]",
+                                    "value": "250000"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "product",
+                                "list"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Coupon APIs",
+            "item": [
+                {
+                    "name": "Create Coupon",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "{{url}}/coupon",
+                            "path": [
+                                "coupon"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"couponCode\": \"summer20\",\n  \"fromDate\": \"2023-9-26\",\n  \"toDate\": \"2023-9-30\",\n  \"couponAmount\": 40,\n  \"isPercentage\": \"true\",\n  \"couponAssignedToUsers\": [\n    {\n      \"userId\": \"64ff2df651f55ce8190ddb6d\",\n      \"maxUsage\": 3\n    }\n  ]\n}"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiZG9vc2FtODdAZ21haWwuY29tIiwiX2lkIjoiNjRmZjJkZjY1MWY1NWNlODE5MGRkYjZkIiwicm9sZSI6IlVzZXIiLCJpYXQiOjE2OTU3MjY4ODEsImV4cCI6MTY5NTczMDQ4MX0.h8hsvlfNGWOFZnMyBywT_dRZxO8uEHDZ3Vuf6VdGT3M",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Delete Coupon",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "{{url}}/coupon/?couponId=65038ec4c7fa698894bd1fd0",
+                            "query": [
+                                {
+                                    "key": "couponId",
+                                    "value": "65038ec4c7fa698894bd1fd0"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "coupon"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiZG9vc2FtQGdtYWlsLmNvbSIsIl9pZCI6IjY1MDA4YzVlMTc2NjE2ZTk3NmQ5NTFhZCIsInJvbGUiOiJVc2VyIiwiaWF0IjoxNjk0NzgxNzQ3LCJleHAiOjE2OTQ3ODUzNDd9.kL6ZGVKE2W1C-YsnyoDaTeSBncH-mp6rH3g23HVxCv4",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Update Coupon",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "{{url}}/coupon/?couponId=6512c047a229df97e57f7d6d",
+                            "query": [
+                                {
+                                    "key": "couponId",
+                                    "value": "6512c047a229df97e57f7d6d"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "coupon"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"fromDate\":\"2023-9-27\",\n  \"toDate\":\"2023-10-2\"\n}"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiZG9vc2FtODdAZ21haWwuY29tIiwiX2lkIjoiNjRmZjJkZjY1MWY1NWNlODE5MGRkYjZkIiwicm9sZSI6IkFkbWluIiwiaWF0IjoxNjk1ODEyMzg2LCJleHAiOjE2OTU4MTU5ODZ9.OWujrnGrv9ZVF9j9UNxR1YawrbEuyj_uCi82xwfQa2Q",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Get All Coupons",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{url}}/coupon",
+                            "path": [
+                                "coupon"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "User APIs",
+            "item": [
+                {
+                    "name": "Authentication APIs",
+                    "item": [
+                        {
+                            "name": "SignUp",
+                            "request": {
+                                "method": "POST",
+                                "url": {
+                                    "raw": "{{url}}/auth",
+                                    "path": [
+                                        "auth"
+                                    ],
+                                    "host": [
+                                        "{{url}}"
+                                    ]
+                                },
+                                "body": {
+                                    "mode": "raw",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    },
+                                    "raw": "{\n  \"userName\": \"Ahmed\",\n  \"email\": \"ahmed@gmail.com\",\n  \"password\": \"ahmed123\",\n  \"age\": 23,\n  \"gender\": \"Male\",\n  \"phoneNumber\": \"0100200300\",\n  \"address\": [\n    \"Cairo\",\n    \"Mansoura\"\n  ]\n}"
+                                }
+                            }
+                        },
+                        {
+                            "name": "Confirm Email",
+                            "request": {
+                                "method": "GET",
+                                "url": {
+                                    "raw": "{{url}}/auth/confirm/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiZG9vc2FtYTA4N0BnbWFpbC5jb20iLCJpYXQiOjE2OTQzODM1MzAsImV4cCI6MTY5NDM4NzEzMH0.ma5-lu4VW3iHqzPx6EiCptJs4TRkJxXMbq1WisNpxz0",
+                                    "path": [
+                                        "auth",
+                                        "confirm",
+                                        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiZG9vc2FtYTA4N0BnbWFpbC5jb20iLCJpYXQiOjE2OTQzODM1MzAsImV4cCI6MTY5NDM4NzEzMH0.ma5-lu4VW3iHqzPx6EiCptJs4TRkJxXMbq1WisNpxz0"
+                                    ],
+                                    "host": [
+                                        "{{url}}"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "name": "SignIn",
+                            "request": {
+                                "method": "POST",
+                                "url": {
+                                    "raw": "{{url}}/auth/signIn",
+                                    "path": [
+                                        "auth",
+                                        "signIn"
+                                    ],
+                                    "host": [
+                                        "{{url}}"
+                                    ]
+                                },
+                                "body": {
+                                    "mode": "raw",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    },
+                                    "raw": "{\n  \"email\": \"abdoosam87@gmail.com\",\n  \"password\": \"abdo1234\"\n}"
+                                }
+                            }
+                        },
+                        {
+                            "name": "Forget Password",
+                            "request": {
+                                "method": "POST",
+                                "url": {
+                                    "raw": "{{url}}/auth/forget/",
+                                    "path": [
+                                        "auth",
+                                        "forget"
+                                    ],
+                                    "host": [
+                                        "{{url}}"
+                                    ]
+                                },
+                                "body": {
+                                    "mode": "raw",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    },
+                                    "raw": "{\n  \"email\": \"abdoosam87@gmail.com\"\n}"
+                                }
+                            }
+                        },
+                        {
+                            "name": "Reset Password",
+                            "request": {
+                                "method": "GET",
+                                "url": {
+                                    "raw": "{{url}}/auth/reset/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiZG9vc2FtODdAZ21haWwuY29tIiwicmVzZXRDb2RlIjoiJDJiJDA4JGlPeHF1ckV3Tjc3ZGhYVmczbi4zUU8xemFpNHl6VnlBQ2V4OFlRZzNaeVJLUVN4eGd5MWhhIiwia6VnlBQ2V4OFlRZzNaeVJLUVN4eGd5MWhhIiwiaWF0IjoxNjk0NTM0OTE3LCJleHAiOjE2OTQ1Mzg1MTd9.xadD_iChNJGcwqL4SPexGaqWsL1kzfxG6-umaTiTq_k",
+                                    "path": [
+                                        "auth",
+                                        "reset",
+                                        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiZG9vc2FtODdAZ21haWwuY29tIiwicmVzZXRDb2RlIjoiJDJiJDA4JGlPeHF1ckV3Tjc3ZGhYVmczbi4zUU8xemFpNHl6VnlBQ2V4OFlRZzNaeVJLUVN4eGd5MWhhIiwia6VnlBQ2V4OFlRZzNaeVJLUVN4eGd5MWhhIiwiaWF0IjoxNjk0NTM0OTE3LCJleHAiOjE2OTQ1Mzg1MTd9.xadD_iChNJGcwqL4SPexGaqWsL1kzfxG6-umaTiTq_k"
+                                    ],
+                                    "host": [
+                                        "{{url}}"
+                                    ]
+                                },
+                                "body": {
+                                    "mode": "raw",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    },
+                                    "raw": "{\n  \"newPassword\": \"abdo12345\"\n}"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Cart APIs",
+            "item": [
+                {
+                    "name": "Add To Cart",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "{{url}}/cart",
+                            "path": [
+                                "cart"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"productId\": \"64f5d4d230660de4da5b6422\",\n  \"quantity\": 3\n}"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiZG9vc2FtODdAZ21haWwuY29tIiwiX2lkIjoiNjRmZjJkZjY1MWY1NWNlODE5MGRkYjZkIiwicm9sZSI6IlVzZXIiLCJpYXQiOjE2OTUwNTY4NjUsImV4cCI6MTY5NTA2MDQ2NX0.y_zNvJ-48J_VioetJ47slY5RKwyKa33MN93WyhCsOpo",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Delete from Cart",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "{{url}}/cart",
+                            "path": [
+                                "cart"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"productId\":\"64f5d4ac30660de4da5b6418\"\n}"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiZG9vc2FtODdAZ21haWwuY29tIiwiX2lkIjoiNjRmZjJkZjY1MWY1NWNlODE5MGRkYjZkIiwicm9sZSI6IlVzZXIiLCJpYXQiOjE2OTUwMzY3NzIsImV4cCI6MTY5NTA0MDM3Mn0.d9_j5jKxKhBpiHGJ5oAnpeVQVF_HJQ2CyTG-oa5_Ksc",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Order APIs",
+            "item": [
+                {
+                    "name": "Create Order",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "{{url}}/order",
+                            "path": [
+                                "order"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"productId\": \"64f629c8e9ed5f551b420a41\",\n  \"couponCode\": \"summer20\",\n  \"quantity\": 3,\n  \"address\": \"Mansoura\",\n  \"phoneNumbers\": [\n    \"01002003004\"\n  ],\n  \"paymentMethod\": \"Card\"\n}"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiZG9vc2FtODdAZ21haWwuY29tIiwiX2lkIjoiNjRmZjJkZjY1MWY1NWNlODE5MGRkYjZkIiwicm9sZSI6IlVzZXIiLCJpYXQiOjE2OTYwMTIyNTQsImV4cCI6MTY5NjAxNTg1NH0.SGjPI_Wh5uggMkn4S3Z-oOmAWX79cZKWkPz7zRlykxo",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Create Order from Cart",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "{{url}}/order/orderCart?cartId=650876e32a4068d9f1dc3741",
+                            "query": [
+                                {
+                                    "key": "cartId",
+                                    "value": "650876e32a4068d9f1dc3741"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "order",
+                                "orderCart"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"couponCode\": \"summer20\",\n  \"address\": \"Mansoura\",\n  \"phoneNumbers\": [\n    \"01002003004\"\n  ],\n  \"paymentMethod\": \"Cash\"\n}"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiZG9vc2FtODdAZ21haWwuY29tIiwiX2lkIjoiNjRmZjJkZjY1MWY1NWNlODE5MGRkYjZkIiwicm9sZSI6IlVzZXIiLCJpYXQiOjE2OTUwNTY4NjUsImV4cCI6MTY5NTA2MDQ2NX0.y_zNvJ-48J_VioetJ47slY5RKwyKa33MN93WyhCsOpo",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
