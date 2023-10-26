@@ -1,4 +1,4 @@
-import { Schema, model } from "mongoose";
+import { Schema, model } from "mongoose"
 
 import pkg from "bcrypt";
 import systemRoles from "../../Src/Utils/systemRoles.js";
