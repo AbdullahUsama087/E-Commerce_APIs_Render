@@ -1,5 +1,5 @@
 import { Schema, model } from "mongoose";
-
+ 
 const brandSchema = new Schema(
   {
     name: {
